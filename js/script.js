@@ -13,12 +13,12 @@ let calculator = {
   },
 
   read() {
-    let firstVal = prompt("Введите первое значение:");
+    let firstVal = prompt(`Введите первое значение:`);
     this.isValid(firstVal);
     if (this.flag) {
       console.log(this.firstVal = +firstVal);
     }
-    let secondVal = prompt("Введите второе значение :");
+    let secondVal = prompt(`Введите второе значение:`);
     this.isValid(secondVal);
     if (this.flag) {
       this.secondVal = +secondVal;
@@ -29,7 +29,7 @@ let calculator = {
     if (this.flag) {
       return this.firstVal + this.secondVal;
     } else {
-      return "не числу!";
+      return `не числу!`;
     }
   },
 
@@ -37,13 +37,13 @@ let calculator = {
     if (this.flag) {
       return this.firstVal * this.secondVal;
     } else {
-      return "не числу!";
+      return `не числу!`;
     }
   }
 };
 
 calculator.read();
 
-alert("Сумма равна  " + calculator.sum());
+alert(`Сумма равна  ` + calculator.sum());
 
-alert("Произведение равно  " + calculator.mul());
+alert(`Произведение равно  ` + calculator.mul());
