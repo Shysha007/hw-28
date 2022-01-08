@@ -6,7 +6,7 @@ let calculator = {
   secondVal: 0,
 
   isValid(arg) {
-  if (isNaN(arg) || arg === null || arg.trim() === "") { 
+  if (isNaN(arg) || arg === null || arg.trim() === ``) { 
       alert("Введено не число!");
       this.flag = false;
     }
